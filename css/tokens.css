@@ -1,0 +1,92 @@
+:root{
+    /* COLORS */
+
+        --white: #FFF;
+
+        /* BRAND */
+        --brand-90: #0B004E;
+        --brand-70: #1B00C0;
+        --brand-40: #2400FF;
+        --brand-20: #8482FF;
+        --brand-10: #D3DAFF;
+        --brand-05: #F3F7FF;
+
+        /* GRAY */
+        --gray-90: #1E1E1E;
+        --gray-70: #5F5F5F;
+        --gray-40: #B7B7B7;
+        --gray-20: #D0D0D0;
+        --gray-10: #ECECEC;
+        --gray-05: #FAFAFA;
+
+
+        /* GREEN */
+        --green-90: #234500;
+        --green-70: #59A40F;
+        --green-40: #84CB3D;
+        --green-20: #B4EC7D;
+        --green-10: #D1F6AC;
+        --green-05: #E9F9D9;
+
+        /* RED */
+        --red-90: #430000;
+        --red-70: #B10000;
+        --red-40: #F22020;
+        --red-20: #FF8484;
+        --red-10: #FFC7C7;
+        --red-05: #FFEBEB;
+
+        /* ORANGE */
+        --orange-90: #502B00;
+        --orange-70: #D77400;
+        --orange-40: #FF9921;
+        --orange-20: #FFC37C;
+        --orange-10: #FFDBB0;
+        --orange-05: #FFF5EA;
+
+        /* SALMON */
+        --salmon-90: #760209;
+        --salmon-70: #C63737;
+        --salmon-40: #FF6258;
+        --salmon-20: #FF9A82;
+        --salmon-10: #FCD0C5;
+        --salmon-05: #FFE9E3;
+
+        /* BLUE */
+        --blue-90: #002C55;
+        --blue-70: #187CD8;
+        --blue-40: #409AED;
+        --blue-20: #93CBFF;
+        --blue-10: #CFE8FF;
+        --blue-05: #EDF6FF;
+
+        /* PURPLE */
+        --purple-90: #360377;
+        --purple-70: #7D34DA;
+        --purple-40: #A162F0;
+        --purple-20: #C69AFF;
+        --purple-10: #E2CCFF;
+        --purple-05: #F5EDFF;
+
+    /* SPACING AND RADIUS */
+        --sml: 8px;
+        --mid: 16px;
+        --big: 24px;
+        --rounded: 40px;
+        --circ: 100%;
+    
+    /* WEIGHT FONT */
+
+        --lighter: 100;
+        --light: 200;
+        --regular: 400;
+        --bold: 800;
+        --bolder: 900;
+
+     /* PADDING */
+
+        --p-sml: 4px 12px;
+        --p-mid: 6px 14px;
+        --p-big: 12px 24px;
+
+}

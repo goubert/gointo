@@ -1,0 +1,88 @@
+@import url("https://use.typekit.net/rta2bhv.css");
+@import url("../css/tokens.css");
+
+
+* , body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'mr-eaves-xl-sans', sans-serif;
+    font-size: 14px;
+    color: var(--gray-90);
+}
+
+p{
+    font-size: 1rem;
+    color: var(--gray-90);
+}
+
+h1{ font-size: 3.4rem;}
+h2{ font-size: 3.0rem;}
+h3{ font-size: 2.6rem;}
+h4{ font-size: 2.2rem;}
+h5{ font-size: 1.8rem;}
+h6{ font-size: 1.4rem;}
+
+
+
+body.capa{
+    background: var(--gray-90);
+}
+
+
+/* CAPA */
+
+.bg-city{
+    width: 100vw;
+    height: 100vh;
+    background: var(--gray-90) url('../riodasostras/img/bg-capa.jpg');
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    
+}
+
+.main-content-capa{
+    max-width:752px;
+    margin: 24px auto;
+    display: flex;
+    flex-grow: 1;
+    opacity: 1;
+    position:relative;
+}
+
+.title-city{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+    .title-city p.gt-presents{
+        color: var(--white);
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.6rem;
+    }
+
+    .title-city h1.name-city{
+        font-size: 7rem;
+        font-weight: var(--bolder);
+        color: var(--white);
+        text-align: center;
+    }
+
+    .title-city h6.state-country{
+        color: var(--white);
+        border-radius: var(--rounded);
+        background: rgba(255, 255, 255, 0.2);
+        font-weight: var(--light);
+        padding: var(--p-sml);
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+    }
+
