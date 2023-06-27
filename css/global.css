@@ -161,3 +161,51 @@ body.capa{
             width: 1.8rem; 
             }
 
+
+
+/* Até 800px */
+
+@media (max-width: 800px)
+{
+
+    /* CAPA */ 
+
+    .main-content-capa{
+        max-width: 100%;
+    }
+
+    .title-city h1.name-city{
+        font-size: 5rem;
+    }
+
+    .info-weather-city{
+        gap: var(--s-sml);
+    }
+
+    .info-options-city{
+        gap: var(--s-sml);
+    }
+
+    .options-city{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--s-sml);
+    }
+
+    .options-city > a{
+        flex-grow: 0;
+    }
+
+    .info-city{
+        padding: var(--p-uni-mid);
+
+    }
+    .weather-city{
+        padding: var(--p-uni-mid);
+        flex-basis: 114px;
+    }
+        .info-city p.about-city{
+            font-size: 1rem;
+        }
+
+
+}
