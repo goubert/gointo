@@ -68,10 +68,15 @@
         --purple-10: #E2CCFF;
         --purple-05: #F5EDFF;
 
-    /* SPACING AND RADIUS */
-        --sml: 8px;
-        --mid: 16px;
-        --big: 24px;
+    /* SPACING */
+        --s-sml: 8px;
+        --s-mid: 16px;
+        --s-big: 24px;
+
+    /* RADIUS */
+        --r-sml: 8px;
+        --r-mid: 16px;
+        --r-big: 24px;
         --rounded: 40px;
         --circ: 100%;
     
@@ -88,5 +93,8 @@
         --p-sml: 4px 12px;
         --p-mid: 6px 14px;
         --p-big: 12px 24px;
+        --p-uni-sml:8px;
+        --p-uni-mid: 16px;
+        --p-uni-big: 24px;
 
 }
