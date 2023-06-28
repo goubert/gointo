@@ -1,4 +1,7 @@
 :root{
+
+    --doc-height: 100%;
+
     /* COLORS */
 
         --white: #FFF;
@@ -85,7 +88,7 @@
         --lighter: 100;
         --light: 200;
         --regular: 400;
-        --bold: 800;
+        --bold: 700;
         --bolder: 900;
 
      /* PADDING */
