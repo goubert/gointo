@@ -172,6 +172,8 @@ body.capa{
 
     .main-content-capa{
         max-width: 100%;
+        justify-content: space-between;
+        padding: var(--s-mid);
     }
 
     .title-city h1.name-city{
@@ -191,8 +193,9 @@ body.capa{
         gap: var(--s-sml);
     }
 
-    .options-city > a{
-        flex-grow: 0;
+    .options-city a{
+        flex-grow: 1;
+        flex-shrink: 1;
     }
 
     .info-city{
@@ -207,5 +210,22 @@ body.capa{
             font-size: 1rem;
         }
 
+
+}
+
+
+@media (max-height: 710px)
+{
+
+    .main-content-capa{
+    }
+
+    .title-city h1.name-city{
+        font-size: 3.5rem;
+    }
+
+    .options-city a{
+        gap: var(--s-sml);
+    }
 
 }
