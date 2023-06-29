@@ -340,6 +340,83 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
         transition: background 250ms ease;
         border: 1px solid rgba(255, 255, 255, 0.736);
     }
+
+
+
+
+    /* SECTION
+
+    */
+
+    section{
+        margin: 40px auto;
+        max-width: var(--content-width);
+        display: flex;
+        flex-direction: column;
+        gap: var(--s-big);
+    }
+
+    .title-section{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+
+        .title-section > h4{
+            color: var(--gray-90);
+            font-size: 2rem;
+        }
+
+        .title-section > p{
+            color: var(--gray-70);
+            font-size: 1.2rem;
+        }
+
+    .itens-list{
+        width: 100%;
+        display: grid;
+        gap: var(--s-mid);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+        .itens-list .card-atracoes{
+            width: 272px;
+            height: 266px;
+            border-radius: var(--r-mid);
+            display: flex;
+            align-items: end;
+            position: relative;
+            padding: var(--s-mid);
+            overflow: hidden;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .itens-list .card-atracoes img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+        }
+
+        .itens-list .card-atracoes::before{
+            position: absolute;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 4.69%, rgba(0, 0, 0, 0.69) 62.50%);
+            content: "";
+            min-height: 106px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .itens-list .card-atracoes h6{
+            color: var(--white);
+            position: relative;
+            z-index: 6;
+        }
     
 
 
@@ -425,6 +502,11 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
         
     }
 
+    ul.options-guide > li a.active{
+        border-radius: var(--r-sml);
+        
+    }
+
     ul.more-options-menu{
         display: none;
         width: auto;
@@ -455,11 +537,56 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
 
 
     /* CONTENT ATRACOES */
-
+    .hero-big{
+        margin-top: unset;
+    }
     .main-content-inside{
         margin-top: unset;
         margin-bottom: var(--menu-height)
     }
+
+
+    /* SECTION 
+
+    */
+
+    section{
+        margin-bottom: var(--menu-height);
+        width: 100%;
+        padding: var(--s-mid) var(--s-mid) calc(var(--menu-height) + 60px) var(--s-mid);
+    }
+
+
+    .itens-list{
+        width: 100%;
+        display: grid;
+        gap: var(--s-mid);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Card Atrações 
+
+    */
+        .itens-list .card-atracoes{
+            width: 100%;
+            height: 266px;
+            border-radius: var(--r-mid);
+            display: flex;
+            align-items: end;
+            position: relative;
+            padding: var(--s-mid);
+            overflow: hidden;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .itens-list .card-atracoes img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+        }
 
     
 

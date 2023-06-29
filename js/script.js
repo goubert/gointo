@@ -32,14 +32,18 @@ function openMoreMenu(event){
             moreMenu.style.display = 'none';
             openedMenuMore = true;
         }
-        
-           
-   
 }
 
 closeMoreMenu.addEventListener('click' , openMoreMenu)
 
 btMoreMenu.addEventListener('click' , openMoreMenu)
 
-console.log(btMoreMenu)
-  
+
+let bgFotoAtracao = document.querySelector('#foto-atracao');
+let nomeAtracao = document.querySelector('#nome-atracao');
+
+let listAtracoes = document.querySelector('#list-atracoes');
+
+const urlAtracoes = 'atracoes.json';
+
+
