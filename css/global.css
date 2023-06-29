@@ -14,11 +14,14 @@
     line-height: 1.2rem;
 }
 
+
+
 html, body{
     height: 100vh;
     height: var(--doc-height);
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body.capa{
@@ -357,6 +360,17 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
         min-height: 100px;
     }
 
+    .nav-content li a.active , .nav-content > li a.active.after-scroll-nav{
+        border: 1px solid rgba(255, 255, 255, 0.50);
+        background: var(--white);
+        color: var(--gray-90);
+        
+    }
+
+    .nav-content > li a.active svg path{
+        fill: var(--gray-90);
+    }
+
     .nav-content > li a.after-scroll-nav{
         border-radius: var(--r-sml);
         min-height: auto;
@@ -583,7 +597,7 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
         position: absolute;
         background: var(--brand-90);
         padding: var(--s-mid);
-        bottom: calc(var(--menu-height) + 16px);
+        bottom: 90px;
         left: 50%;
         transform: translateX(-50%);
         gap: 8px;
@@ -641,8 +655,14 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
 
     .nav-content.after-scroll{
         overflow-y: scroll;
+        overflow-x: visible;
         width: 100%;
         padding:0 var(--s-mid);
+    }
+
+    .nav-content.after-scroll::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
     }
 
 
@@ -670,6 +690,13 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
     .nav-content  li a.after-scroll-nav{
         width: max-content;
         border-radius: var(--r-sml);
+    }
+
+    .nav-content li a.active , .nav-content > li a.active.after-scroll-nav{
+        border: 1px solid rgba(255, 255, 255, 0.50);
+        background: var(--white);
+        color: var(--gray-90);
+        
     }
 
 
