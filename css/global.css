@@ -538,6 +538,7 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
     .weather-city{
         padding: var(--p-uni-mid);
         flex-basis: 114px;
+        min-height: 200px;
     }
         .info-city p.about-city{
             font-size: 1rem;
