@@ -265,7 +265,7 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
 
     */
 
-.hero-big{
+.hero-big-atracoes{
     margin-top: var(--menu-height);
     width: 100%;
     background: url('../riodasostras/img/bg-capa.jpg');
@@ -276,9 +276,18 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
     position: relative;
     background-size: cover;
     background-position: center center;
+    
 }
 
-.hero-big::before{
+.hero-big-atracoes.after-scroll{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    height: 96px;
+}
+
+
+.hero-big-atracoes::before{
     content: "";
     width: 100%;
     height: 100%;
@@ -304,9 +313,22 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
         
     }
 
+    .wrap-hero-big.after-scroll{
+        flex-direction: row;
+        
+        gap: 24px;
+    }
+
     .wrap-hero-big > h1{
         font-size: 3.4rem;
         color: var(--white);
+        text-align: center;
+    }
+
+    .wrap-hero-big > h1.after-scroll{
+        font-size: 1.8rem;
+        text-align: left;
+        line-height: 1.1;
     }
 
     .nav-content{
@@ -319,7 +341,7 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
         flex-shrink: 0;
     }
 
-    .nav-content li a{
+    .nav-content > li a{
         border: 1px solid rgba(255, 255, 255, 0.50);
         background: rgba(255, 255, 255, 0.30);
         backdrop-filter: blur(7.5px);
@@ -333,6 +355,18 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
         font-size: 1.2rem;
         font-weight: var(--bold);
         min-height: 100px;
+    }
+
+    .nav-content > li a.after-scroll-nav{
+        border-radius: var(--r-sml);
+        min-height: auto;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        width: auto;
+        padding: 8px 16px;
+        justify-content: center;
+        font-size: 1rem;
     }
 
     .nav-content li a:hover{
@@ -349,11 +383,15 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
     */
 
     section{
-        margin: 40px auto;
+        margin: 64px auto;
         max-width: var(--content-width);
         display: flex;
         flex-direction: column;
         gap: var(--s-big);
+    }
+
+    section:first-child{
+        margin-top: 40px;
     }
 
     .title-section{
@@ -366,6 +404,7 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
         .title-section > h4{
             color: var(--gray-90);
             font-size: 2rem;
+            text-align: center;
         }
 
         .title-section > p{
@@ -381,7 +420,7 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
     }
 
         .itens-list .card-atracoes{
-            width: 272px;
+            max-width: 272px;
             height: 266px;
             border-radius: var(--r-mid);
             display: flex;
@@ -425,10 +464,39 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
 
 
 
+        /*  
+############################################################################
+############################################################################
+##############################  Até width 1170px#  #########################
+############################################################################
+############################################################################
+############################################################################
+*/
+
+@media (max-width: 1170px)
+{
+
+    section{
+        padding: 0 var(--s-mid);
+    }
+
+}
 
 
 
-/* Até 800px */
+
+
+
+
+
+/*  
+############################################################################
+############################################################################
+##############################  Até 800px#  ################################
+############################################################################
+############################################################################
+############################################################################
+*/
 
 @media (max-width: 800px)
 {
@@ -538,9 +606,72 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
 
 
     /* CONTENT ATRACOES */
-    .hero-big{
+    .hero-big-atracoes{
         margin-top: unset;
     }
+
+    .hero-big-atracoes.after-scroll{
+        height: 86px;
+    }
+
+    .wrap-hero-big.after-scroll{
+        flex-direction: column;
+        padding: 0;
+        gap: 24px;
+    }
+
+    .wrap-hero-big > h1{
+        font-size: 2.7rem;
+        line-height: 1;
+    }
+
+    .wrap-hero-big > h1.after-scroll{
+        display: none;
+    }
+
+    .wrap-hero-big.after-scroll{
+        gap: 8px;
+        width: 100%;
+    }
+
+    .nav-content{
+       
+    }
+
+    .nav-content.after-scroll{
+        overflow-y: scroll;
+        width: 100%;
+        padding:0 var(--s-mid);
+    }
+
+
+    .nav-content li{
+        flex-shrink: 1;
+        flex-grow: 0;
+    }
+
+    .nav-content li a{
+        border: 1px solid rgba(255, 255, 255, 0.50);
+        background: rgba(255, 255, 255, 0.30);
+        backdrop-filter: blur(7.5px);
+        -webkit-backdrop-filter: blur(7.5px);
+        padding: var(--s-mid);
+        border-radius: var(--s-mid);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: var(--white);
+        font-size: 1.2rem;
+        font-weight: var(--bold);
+        min-height: 130px;
+    }
+
+    .nav-content  li a.after-scroll-nav{
+        width: max-content;
+        border-radius: var(--r-sml);
+    }
+
+
     .main-content-inside{
         margin-top: unset;
         margin-bottom: var(--menu-height)
@@ -554,7 +685,26 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
     section{
         margin-bottom: var(--menu-height);
         width: 100%;
+        margin-top: 40px;
+        padding: var(--s-mid) ;
+    }
+
+    section:last-of-type{
         padding: var(--s-mid) var(--s-mid) calc(var(--menu-height) + 60px) var(--s-mid);
+    }
+
+    .title-section{
+        gap: 2px;
+    }
+
+    .title-section > h4{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .title-section > p{
+        font-size: 1rem;
+        text-align: center;
     }
 
 
@@ -593,6 +743,15 @@ h6{ font-size: 1.4rem; line-height: 1.4rem;}
 
 }
 
+
+/*  
+############################################################################
+############################################################################
+##############################  Até Height 710px#  #########################
+############################################################################
+############################################################################
+############################################################################
+*/
 
 @media (max-height: 710px)
 {

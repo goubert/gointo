@@ -1,14 +1,39 @@
-const atracoes = document.querySelector('#list-atracoes');
+const atracoesPraias = document.querySelector('#list-praias');
+const atracoesTuristicos = document.querySelector('#list-turisticos');
+const atracoesCulturais = document.querySelector('#list-culturais');
 
-function createAtracao([img,nome,url]){
+
+function createAtracaoPraia([img,nome,url]){
     let code = `
         <a id="#foto-atracao" href="${url}" class="card-atracoes">
         <img src="${img}" alt="${nome}">
         <h6 id="#nome-atracao">${nome}</h6>
         </a>
     `;
-    atracoes.innerHTML += code;
+    atracoesPraias.innerHTML += code;
 }
+
+function createAtracaoCulturais([img,nome,url]){
+    let code = `
+        <a id="#foto-atracao" href="${url}" class="card-atracoes">
+        <img src="${img}" alt="${nome}">
+        <h6 id="#nome-atracao">${nome}</h6>
+        </a>
+    `;
+    atracoesCulturais.innerHTML += code;
+}
+
+function createAtracaoTuristicos([img,nome,url]){
+    let code = `
+        <a id="#foto-atracao" href="${url}" class="card-atracoes">
+        <img src="${img}" alt="${nome}">
+        <h6 id="#nome-atracao">${nome}</h6>
+        </a>
+    `;
+    atracoesTuristicos.innerHTML += code;
+}
+
+
 
 let praiaItapebussus = [
     "../riodasostras/praias/praiaitapebussus/foto_01.jpeg",
@@ -94,17 +119,36 @@ let lagoaIriry = [
     "../riodasostras/praias/praiaitapebussus/index.html"
 ];
 
-createAtracao(praiaItapebussus);
-createAtracao(praiaAreiasNegras);
-createAtracao(praiaJoana);
-createAtracao(praiaCemiterio);
-createAtracao(praiaVirgem);
-createAtracao(praiaRemanso);
-createAtracao(praiaPedrinhas);
-createAtracao(praiaEnseadaGaivotas);
-createAtracao(praiaMarNorte);
-createAtracao(praiaCentro);
-createAtracao(praiaCostazul);
-createAtracao(praiaAbrico);
-createAtracao(ilhaCosta);
-createAtracao(lagoaIriry);
+createAtracaoPraia(praiaItapebussus);
+createAtracaoPraia(praiaAreiasNegras);
+createAtracaoPraia(praiaJoana);
+createAtracaoPraia(praiaCemiterio);
+createAtracaoPraia(praiaVirgem);
+createAtracaoPraia(praiaRemanso);
+createAtracaoPraia(praiaPedrinhas);
+createAtracaoPraia(praiaEnseadaGaivotas);
+createAtracaoPraia(praiaMarNorte);
+createAtracaoPraia(praiaCentro);
+createAtracaoPraia(praiaCostazul);
+createAtracaoPraia(praiaAbrico);
+createAtracaoPraia(ilhaCosta);
+createAtracaoPraia(lagoaIriry);
+
+
+createAtracaoTuristicos(ilhaCosta);
+createAtracaoTuristicos(lagoaIriry);
+createAtracaoTuristicos(ilhaCosta);
+createAtracaoTuristicos(lagoaIriry);
+createAtracaoTuristicos(ilhaCosta);
+createAtracaoTuristicos(lagoaIriry);
+createAtracaoTuristicos(ilhaCosta);
+createAtracaoTuristicos(lagoaIriry);
+createAtracaoTuristicos(ilhaCosta);
+createAtracaoTuristicos(lagoaIriry);
+
+
+createAtracaoCulturais(lagoaIriry);
+createAtracaoCulturais(lagoaIriry);
+createAtracaoCulturais(lagoaIriry);
+createAtracaoCulturais(lagoaIriry);
+createAtracaoCulturais(lagoaIriry);
